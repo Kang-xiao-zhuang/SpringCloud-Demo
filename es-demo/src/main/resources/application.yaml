@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 logging:
   level:
-    cn.itcast: debug
+    com.zhuang: debug
   pattern:
     dateformat: HH:mm:ss:SSS
 mybatis-plus:
