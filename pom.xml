@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>es-demo</module>
         <module>hotel-admin</module>
+        <module>mq-demo</module>
     </modules>
 
     <packaging>pom</packaging>
