@@ -23,3 +23,4 @@ spring:
             - Path=/order/**
       default-filters:
         - AddRequestHeader=Truth,Itcast is freaking awesome!
+        - AddRequestHeader=origin,gateway

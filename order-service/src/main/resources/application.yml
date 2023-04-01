@@ -16,6 +16,14 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8080
+      web-context-unify: false #关闭context整合
+      datasource:
+        flow:
+          nacos:
+            server-addr: localhost:8848 # nacos地址
+            dataId: orderservice-flow-rules
+            groupId: SENTINEL_GROUP
+            rule-type: flow # 还可以是：degrade、authority、param-flow
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -46,3 +54,5 @@ feign:
     enabled: true # 开启feign对HttpClient的支持
     max-connections: 200 # 最大的连接数
     max-connections-per-route: 50 # 每个路径的最大连接数
+  sentinel:
+    enabled: true # 开启feign对sentinel的支持
